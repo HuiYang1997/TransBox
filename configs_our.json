@@ -1,0 +1,157 @@
+{
+  "elbe": {
+    "GALEN": {
+      "prediction": {
+        "dataset": "GALEN",
+        "task": "prediction",
+        "model": "elbe",
+        "lr": 0.005,
+        "margin": 0.15,
+        "embedding_dim": 200
+      }
+    },
+    "GO": {
+      "prediction": {
+        "dataset": "GO",
+        "task": "prediction",
+        "model": "elbe",
+        "lr": 0.005,
+        "margin": 0.15,
+        "embedding_dim": 200
+      }
+    },
+    "ANATOMY": {
+      "prediction": {
+        "dataset": "ANATOMY",
+        "task": "prediction",
+        "model": "elbe",
+        "lr": 0.01,
+        "margin": 0.15,
+        "embedding_dim": 200
+      }
+    }
+  },
+  "transrolebox": {
+    "GALEN": {
+      "prediction": {
+        "dataset": "GALEN",
+        "task": "prediction",
+        "model": "transrolebox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 0,
+        "lr": 0.005,
+        "int_approx": "allowEmpty",
+        "margin": 0.1,
+        "reg_factor": 0.5,
+        "embedding_dim": 200
+      }
+    },
+    "GO": {
+      "prediction": {
+        "dataset": "GO",
+        "task": "prediction",
+        "model": "transrolebox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 0,
+        "lr": 0.005,
+        "int_approx": "allowEmpty",
+        "margin": 0.05,
+        "reg_factor": 0.3,
+        "embedding_dim": 200
+      }
+    },
+    "ANATOMY": {
+      "prediction": {
+        "dataset": "ANATOMY",
+        "task": "prediction",
+        "model": "transrolebox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 0,
+        "lr": 0.005,
+        "int_approx": "allowEmpty",
+        "margin": 0,
+        "reg_factor": 0,
+        "embedding_dim": 200
+      }
+    }
+  },
+  "transbox": {
+    "GALEN": {
+      "prediction": {
+        "dataset": "GALEN",
+        "task": "prediction",
+        "model": "transbox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 200,
+        "lr": 0.0005,
+        "use_bias": 0,
+        "margin": 0,
+        "reg_factor": 0,
+        "embedding_dim": 200
+      }
+    },
+    "GO": {
+      "prediction": {
+        "dataset": "GO",
+        "task": "prediction",
+        "model": "transbox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 200,
+        "lr": 0.0005,
+        "use_bias": 0,
+        "margin": 0,
+        "reg_factor": 0,
+        "embedding_dim": 200
+      }
+    },
+    "ANATOMY": {
+      "prediction": {
+        "dataset": "ANATOMY",
+        "task": "prediction",
+        "model": "transbox",
+        "neg_dist": 1,
+        "num_neg": 1,
+        "num_components": 200,
+        "lr": 0.005,
+        "margin": 0,
+        "use_bias": 0,
+        "reg_factor": 0,
+        "embedding_dim": 200
+      }
+    }
+  },
+  "boxel": {
+    "GALEN": {
+      "prediction": {
+        "dataset": "GALEN",
+        "task": "prediction",
+        "model": "boxel",
+        "lr": 0.001,
+        "embedding_dim": 50
+      }
+    },
+    "GO": {
+      "prediction": {
+        "dataset": "GO",
+        "task": "prediction",
+        "model": "boxel",
+        "lr": 0.01,
+        "embedding_dim": 25
+      }
+    },
+    "ANATOMY": {
+      "prediction": {
+        "dataset": "ANATOMY",
+        "task": "prediction",
+        "model": "boxel",
+        "lr": 0.001,
+        "embedding_dim": 25
+      }
+    }
+  }
+}
