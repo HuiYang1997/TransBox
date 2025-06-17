@@ -377,7 +377,7 @@ def compute_complex_axiom_ranks(model, batch_data, batch_size, device, axiom_typ
         if isinstance(ax_dict[key_A], dict):
             # ignore complex axioms C2D
             if axiom_type == 'C2A' and isinstance(ax_dict[key_C], dict):
-                # only record C2D boxes when testing A2C axioms
+                # only record C2D boxes when testing C2A axioms
                 record_C2D_boxes(ax_dict, class_embeds, relation_embeds, model, scalings_embeddings)
             batch_size -= 1
             continue
